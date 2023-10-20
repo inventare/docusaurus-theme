@@ -1,0 +1,6 @@
+{
+  "name": "@inventare/docusaurus-theme-colors",
+  "version": "0.0.1",
+  "main": "colors.js",
+  "license": "MIT"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@inventare/prisma-theme",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@inventare/docusaurus-theme-colors": "*"
+  }
+}
