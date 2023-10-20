@@ -15,6 +15,7 @@
 
 html[data-theme='dark'] {
   --ifm-background-color: var(--inventare-background);
+  --ifm-navbar-background-color: var(--inventare-background);
   
   --ifm-menu-color-background-active: rgba(32, 101, 209, 0.08);
   --ifm-menu-color-background-hover: rgba(32, 101, 209, 0.16);
