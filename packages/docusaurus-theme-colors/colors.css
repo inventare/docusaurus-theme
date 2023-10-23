@@ -1,6 +1,7 @@
 :root {
     --inventare-background: #161c24;
     --inventare-paper: #212b36;
+    --inventare-paper-opacity: rgba(33, 43, 54, 0.9);
 
     /* TEXTS */
     --inventare-text-in-background: #919eab;
