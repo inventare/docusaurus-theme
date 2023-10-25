@@ -45,7 +45,8 @@ const config = {
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
+          showReadingTime: false,
+          blogListComponent: '@inventare/docusaurus-theme/BlogListPage',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:

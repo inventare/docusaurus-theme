@@ -24,7 +24,20 @@ function setClassicPreset(config, { index, classic }) {
     config.presets[index] = classic;
 }
 
-module.exports = {
-    getClassicPreset,
-    setClassicPreset,
+function setupClassicConfig(config) {
+    const { classic, index } = getClassicPreset(config);
+
+    classic[1] = {
+        ...classic[1],
+        theme: {
+            customCss: [
+                require.resolve('@inventare/docusaurus-theme-colors/colors.css'),
+                require.resolve('./theme.css'),
+            ],
+        },
+    }
+
+    setClassicPreset(config, { index, classic });
 }
+
+module.exports = { setupClassicConfig }
