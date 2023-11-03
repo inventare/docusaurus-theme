@@ -6,7 +6,7 @@
   "dependencies": {
     "@docusaurus/core": "2.4.3",
     "@docusaurus/preset-classic": "2.4.3",
-    "@docusaurus/theme-common": "^3.0.0",
+    "@docusaurus/theme-common": "2.4.3",
     "@inventare/docusaurus-theme-colors": "*",
     "@inventare/prisma-theme": "*"
   },
