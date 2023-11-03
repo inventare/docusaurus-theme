@@ -8,5 +8,6 @@
     "@docusaurus/preset-classic": "2.4.3",
     "@inventare/prisma-theme": "*",
     "@inventare/docusaurus-theme-colors": "*"
-  }
+  },
+  "files": ["./**/*"]
 }

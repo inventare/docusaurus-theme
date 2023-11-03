@@ -4,7 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.2",
     "turbo": "^1.10.16"
+  },
+  "scripts": {
+    "release": "changeset publish"
   },
   "private": true,
   "workspaces": [
