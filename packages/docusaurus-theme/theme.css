@@ -144,6 +144,9 @@ article a.card {
 .blog-list-page article[itemprop="blogPost"] .left {
   flex: 1;
   padding: 24px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 .blog-list-page article[itemprop="blogPost"] .left .top-line {
   display: flex;
@@ -196,6 +199,7 @@ article a.card {
   --ifm-link-hover-color: #fff;
 }
 .blog-list-page article[itemprop="blogPost"] > .left > .markdown {
+  flex: 1;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
