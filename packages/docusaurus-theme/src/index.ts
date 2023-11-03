@@ -1,6 +1,5 @@
 import { setupClassicConfig } from './preset';
 import { setupThemeConfig } from './theme';
-import BlogListPage from './BlogListPage';
 
 export function extendsTheme(config: any) {
     setupClassicConfig(config);
@@ -8,6 +7,3 @@ export function extendsTheme(config: any) {
     
     return config;
 }
-
-export { BlogListPage }
-

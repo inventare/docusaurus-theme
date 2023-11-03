@@ -276,3 +276,7 @@ article a.card {
   --ifm-link-decoration: none;
   --ifm-link-hover-decoration: none;
 }
+
+.blog-posts-footer-details-full {
+  flex-direction: column;
+}

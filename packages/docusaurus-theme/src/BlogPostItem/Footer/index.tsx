@@ -1,10 +1,7 @@
-import React from 'react';
 import clsx from 'clsx';
 import { useBlogPost } from '@docusaurus/theme-common/internal';
 import EditThisPage from '@docusaurus/theme-classic/lib/theme/EditThisPage';
 import ReadMoreLink from '@docusaurus/theme-classic/lib/theme/BlogPostItem/Footer/ReadMoreLink';
-
-import styles from './styles.module.css';
 
 export default function BlogPostItemFooter(): JSX.Element | null {
   const {metadata, isBlogPostPage} = useBlogPost();
@@ -25,7 +22,7 @@ export default function BlogPostItemFooter(): JSX.Element | null {
     <footer
       className={clsx(
         'docusaurus-mt-lg',
-        isBlogPostPage && styles.blogPostFooterDetailsFull,
+        isBlogPostPage && 'blog-posts-footer-details-full',
       )}>
 
       {isBlogPostPage && editUrl && (

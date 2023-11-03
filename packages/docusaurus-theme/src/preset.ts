@@ -32,7 +32,7 @@ export function setupClassicConfig(config: any) {
         blog: {
             ...(classic[1].blog || {}),
             showReadingTime: false,
-            blogListComponent: '@inventare/docusaurus-theme/BlogListPage',
+            blogListComponent: '@inventare/docusaurus-theme/dist/BlogListPage',
         },
         theme: {
             customCss: [
@@ -41,6 +41,8 @@ export function setupClassicConfig(config: any) {
             ],
         },
     }
+
+    console.log(classic[1]);
 
     setClassicPreset(config, { index, classic });
 }
