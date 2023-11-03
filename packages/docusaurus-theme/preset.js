@@ -29,6 +29,11 @@ function setupClassicConfig(config) {
 
     classic[1] = {
         ...classic[1],
+        blog: {
+            ...(classic[1].blog || {}),
+            showReadingTime: false,
+            blogListComponent: '@inventare/docusaurus-theme/BlogListPage',
+        },
         theme: {
             customCss: [
                 require.resolve('@inventare/docusaurus-theme-colors/colors.css'),
