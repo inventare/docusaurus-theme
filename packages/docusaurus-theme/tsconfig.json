@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "lib": ["ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "bundler",
+    "module": "esnext",
+    "target": "esnext",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "composite": true,
+    "incremental": true,
+    "rootDir": "src",
+    "outDir": "dist",
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}

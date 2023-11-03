@@ -1,8 +1,8 @@
-function getClassicPreset (config) {
+function getClassicPreset (config: any) {
     if (!config.presets || !config.presets.length) {
         throw new Error('No presets was found at config.');
     }
-    const classicIndex = config.presets.findIndex((item) => {
+    const classicIndex = config.presets.findIndex((item: any) => {
         if (!Array.isArray(item)) {
             return false;
         }
@@ -20,11 +20,11 @@ function getClassicPreset (config) {
     };
 };
 
-function setClassicPreset(config, { index, classic }) {
+function setClassicPreset(config: any, { index, classic }: any) {
     config.presets[index] = classic;
 }
 
-function setupClassicConfig(config) {
+export function setupClassicConfig(config: any) {
     const { classic, index } = getClassicPreset(config);
 
     classic[1] = {
@@ -44,5 +44,3 @@ function setupClassicConfig(config) {
 
     setClassicPreset(config, { index, classic });
 }
-
-module.exports = { setupClassicConfig }

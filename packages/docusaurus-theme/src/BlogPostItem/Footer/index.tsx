@@ -1,8 +1,8 @@
 import React from 'react';
 import clsx from 'clsx';
-import {useBlogPost} from '@docusaurus/theme-common/internal';
-import EditThisPage from '@theme/EditThisPage';
-import ReadMoreLink from '@theme/BlogPostItem/Footer/ReadMoreLink';
+import { useBlogPost } from '@docusaurus/theme-common/internal';
+import EditThisPage from '@docusaurus/theme-classic/lib/theme/EditThisPage';
+import ReadMoreLink from '@docusaurus/theme-classic/lib/theme/BlogPostItem/Footer/ReadMoreLink';
 
 import styles from './styles.module.css';
 

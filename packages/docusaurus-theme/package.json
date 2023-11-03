@@ -6,8 +6,20 @@
   "dependencies": {
     "@docusaurus/core": "2.4.3",
     "@docusaurus/preset-classic": "2.4.3",
-    "@inventare/prisma-theme": "*",
-    "@inventare/docusaurus-theme-colors": "*"
+    "@docusaurus/theme-common": "^3.0.0",
+    "@inventare/docusaurus-theme-colors": "*",
+    "@inventare/prisma-theme": "*"
   },
-  "files": ["./**/*"]
+  "scripts": {
+    "build": "tsc --build && cp src/theme.css dist"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^2.1.0"
+  }
 }

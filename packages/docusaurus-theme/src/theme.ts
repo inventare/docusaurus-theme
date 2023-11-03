@@ -1,9 +1,5 @@
 const { darkTheme } = require('@inventare/prisma-theme');
 
-function setupThemeConfig(config) {
+export function setupThemeConfig(config: any) {
     config.themeConfig.prism.darkTheme = darkTheme;
-}
-
-module.exports = {
-    setupThemeConfig
 }

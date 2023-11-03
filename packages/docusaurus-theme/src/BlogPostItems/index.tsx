@@ -1,7 +1,12 @@
-import React from 'react';
-import {BlogPostProvider} from '@docusaurus/theme-common/internal';
+import { ReactNode, ComponentType } from 'react';
+import { BlogPostProvider } from '@docusaurus/theme-common/internal';
+import { PropBlogPostContent } from '@docusaurus/plugin-content-blog'
 import BlogPostItem from '../BlogPostItem';
-import type {Props} from '@theme/BlogPostItems';
+
+interface Props {
+  items: readonly {content: PropBlogPostContent}[];
+  component?: ComponentType<{children: ReactNode}>;
+}
 
 export default function BlogPostItems({
   items,

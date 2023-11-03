@@ -1,12 +1,16 @@
-import React from 'react';
+import { ReactNode } from 'react';
 import clsx from 'clsx';
-import {useBlogPost} from '@docusaurus/theme-common/internal';
-import BlogPostItemContainer from '@theme/BlogPostItem/Container';
+import { useBlogPost } from '@docusaurus/theme-common/internal';
+import BlogPostItemContainer from '@docusaurus/theme-classic/lib/theme/BlogPostItem/Container';
+import BlogPostItemContent from '@docusaurus/theme-classic/lib/theme/BlogPostItem/Content';
 import BlogPostItemHeader from './Header';
-import BlogPostItemContent from '@theme/BlogPostItem/Content';
 import BlogPostItemFooter from './Footer';
 import BlogPostItemPreview from './Preview';
-import type {Props} from '@theme/BlogPostItem';
+
+interface Props {
+  children: ReactNode;
+  className?: string;
+}
 
 // apply a bottom margin in list view
 function useContainerClassName() {

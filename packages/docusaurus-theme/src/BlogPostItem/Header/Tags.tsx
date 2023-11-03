@@ -1,6 +1,6 @@
 import React from 'react';
-import {useBlogPost} from '@docusaurus/theme-common/internal';
-import TagsListInline from '@theme/TagsListInline';
+import { useBlogPost } from '@docusaurus/theme-common/internal';
+import TagsListInline from '@docusaurus/theme-classic/lib/theme/TagsListInline';
 
 export default function Tags() {
   const {metadata} = useBlogPost();
