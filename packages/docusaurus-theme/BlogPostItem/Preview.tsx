@@ -6,8 +6,6 @@ export default function Preview() {
   const {metadata} = useBlogPost();
   const {frontMatter} = metadata;
   
-  console.log(frontMatter);
-
   if (!frontMatter.image_url) {
     return null;
   }

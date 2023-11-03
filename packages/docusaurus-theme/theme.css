@@ -162,13 +162,32 @@ article a.card {
 }
 .blog-list-page article[itemprop="blogPost"] .left .top-line > div:first-child li a {
   --docusaurus-tag-list-border: transparent;
-  background: var(--ifm-menu-color-background-hover);
-  color: var(--inventare-brand);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 0px 6px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  height: 24px;
+  background: rgba(145, 158, 171, 0.16);
+  color: rgb(145, 158, 171);
   font-weight: bold;
 }
+.blog-list-page article[itemProp="blogPost"] > .left .top-line > div:last-child {
+  font-size: 0.75rem;
+  color: rgb(99, 115, 129);
+  font-weight: normal;
+}
 .blog-list-page article[itemprop="blogPost"] > .left > header > h2 {
-  font-size: 1rem;
-  font-weight: bold;
+  font-size: 0.875rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .blog-list-page article[itemprop="blogPost"] > .left > header > h2 > a {
   --ifm-link-color: #fff;
