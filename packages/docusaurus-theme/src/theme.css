@@ -141,6 +141,7 @@ article a.card {
   
   position: relative;
 }
+
 .blog-list-page article[itemprop="blogPost"] .left {
   flex: 1;
   padding: 24px 24px 16px;
@@ -215,8 +216,37 @@ article a.card {
   max-width: 100%;
   height: 100%;
   border-radius: 8px;
+  object-fit: cover;
 }
 
+
+@media (max-width: 768px) {
+  .blog-list-page article[itemprop="blogPost"] {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
+  .blog-list-page article[itemprop="blogPost"] .preview {
+    width: 100%;
+    height: 200px;
+  }
+  .blog-list-page article[itemprop="blogPost"] > .left > footer > div {
+    text-align: right;
+  }
+  .blog-list-page article[itemprop="blogPost"] .avatar {
+    right: unset;
+    left: 1rem;
+  }
+  .blog-list-page article[itemprop="blogPost"] > .left > header > .margin-top--md > .col--6:nth-child(2) .avatar {
+    right: unset;
+    left: calc(1rem + 48px + 1rem);
+  }
+  .blog-list-page article[itemprop="blogPost"] .avatar .avatar__intro {
+    display: none;
+  }
+  .blog-list-page article[itemprop="blogPost"] .avatar:hover .avatar__intro {
+    display: none;
+  }
+}
 
 .blog-list-page article[itemprop="blogPost"] .avatar {
   position: absolute;
